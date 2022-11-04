@@ -16,6 +16,9 @@ def removebrackets(text):
 def remove_accented_chars(text):
     return unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('utf-8', 'ignore')
 
+def remove_backticks(text):
+    return text.replace("’", "'")
+
 def remove_special_chars(text, remove_digits=False):
     pattern = r'[^a-zA-Z0-9\s]' if not remove_digits else r'[^a-zA-Z\s]'
     return re.sub(pattern, '', text)
