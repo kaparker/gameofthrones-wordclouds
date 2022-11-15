@@ -1,0 +1,14 @@
+name: wordcloud
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - ipykernel
+  - matplotlib
+  - spacy
+  - nltk
+  - wordcloud
+prefix: /opt/miniconda3/envs/wordcloud
